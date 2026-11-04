@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Big_shop, votre boutique digitale au Togo : applications, e-books, formations et créations IA.">
+<title>Big_shop — Votre boutique digitale</title>
+<style>
+:root{font-family:Inter,system-ui,Arial,sans-serif;color:#211d35;background:#f7f5ff;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button,input{font:inherit}
+.top{padding:12px;text-align:center;background:#17142b;color:#fff;font-size:13px}
+header{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:20px max(5vw,18px);background:#fff}
+.logo{font-size:25px;font-weight:900}.logo span{color:#6c45e8}nav{display:flex;gap:20px;align-items:center;font-size:14px;font-weight:700}
+.btn,button{border:0;border-radius:12px;background:#6c45e8;color:#fff;padding:12px 17px;font-weight:750;cursor:pointer}
+.hero{padding:75px max(5vw,18px);background:#17142b;color:#fff}.hero>div,.wrap{max-width:1100px;margin:auto}
+.kicker{color:#a995ff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}
+h1{font-size:clamp(38px,6vw,64px);line-height:1.05;max-width:760px;margin:16px 0}
+.hero p{max-width:620px;line-height:1.8;color:#ddd7ee}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.light{background:#fff;color:#39218d}.outline{border:1px solid #77718e;background:transparent}
+section{padding:60px max(5vw,18px)}h2{font-size:clamp(27px,4vw,40px);margin:8px 0 26px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e9e4f4;border-radius:18px;padding:22px;box-shadow:0 7px 25px #24144b0b}
+.emoji{font-size:34px}.tag{font-size:11px;color:#6c45e8;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+.card h3{margin:9px 0}.card p,.muted{color:#716b85;line-height:1.65;font-size:14px}
+.price{font-weight:900;margin:16px 0}.card button{width:100%}
+.delivery{background:#efecf8}.contact{background:#6c45e8;color:#fff;text-align:center}.contact p{max-width:600px;margin:12px auto 24px;line-height:1.7}
+footer{padding:28px;text-align:center;background:#17142b;color:#ddd7ee;font-size:13px;line-height:1.8}
+.assistant-launch{position:fixed;right:18px;bottom:18px;z-index:5}
+.chat{display:none;position:fixed;right:18px;bottom:82px;width:min(360px,calc(100vw - 36px));height:440px;max-height:70vh;background:#fff;border:1px solid #e5def2;border-radius:18px;box-shadow:0 18px 55px #17142b38;z-index:6;overflow:hidden;flex-direction:column}
+.chat.open{display:flex}.chathead{background:#17142b;color:#fff;padding:15px;display:flex;justify-content:space-between;align-items:center}
+.chathead button{background:transparent;font-size:22px;padding:0}.messages{padding:14px;overflow:auto;display:flex;flex-direction:column;gap:9px;flex:1}
+.bubble{background:#f0edfa;padding:10px 12px;border-radius:12px;font-size:13px;line-height:1.5;white-space:pre-wrap;max-width:92%}
+.bubble.user{background:#6c45e8;color:white;align-self:flex-end}
+.chatform{display:flex;gap:8px;padding:10px;border-top:1px solid #eee9f7}
+.chatform input{min-width:0;flex:1;padding:10px;border:1px solid #ddd6ed;border-radius:10px;color:#211d35}
+.chatform button{padding:10px}.wa{display:block;text-align:center;margin:0 10px 10px;font-size:13px;color:#6c45e8;font-weight:800}
+@media(max-width:760px){nav a:not(.navbtn){display:none}.grid{grid-template-columns:repeat(2,1fr)}.hero{padding-top:55px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}header{padding:16px}.logo{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="top">BIG_SHOP · Votre boutique digitale au Togo · Commande simple sur WhatsApp</div>
+<header><a class="logo" href="#">Big<span>_</span>shop.</a><nav><a href="#produits">Produits</a><a href="#livraison">Livraison</a><a href="#contact">Contact</a><a class="btn navbtn" href="https://wa.me/22896465645">Commander</a></nav></header>
+<main>
+<section class="hero"><div><div class="kicker">Bienvenue chez Big_shop</div><h1>Le digital devient simple et accessible.</h1><p>Découvrez des applications, des outils numériques, des e-books, des formations et des créations assistées par intelligence artificielle. Big_shop vous accompagne avec un contact direct et des informations claires.</p><div class="actions"><a class="btn" href="#produits">Découvrir nos produits</a><a class="btn outline" href="https://wa.me/22896465645">Nous contacter sur WhatsApp</a></div></div></section>
+<section id="produits"><div class="wrap"><div class="kicker">Notre catalogue</div><h2>Nos produits et services</h2><div class="grid">
+<article class="card"><div class="emoji">🎬</div><div class="tag">Création vidéo</div><h3>CapCut</h3><p>Solutions et options de montage vidéo, selon disponibilité et conditions officielles.</p><div class="price">15 000 FCFA</div><button onclick="order('CapCut')">Commander</button></article>
+<article class="card"><div class="emoji">🖌️</div><div class="tag">Design graphique</div><h3>Canva</h3><p>Outils de création graphique pour affiches, flyers, présentations et visuels.</p><div class="price">Prix en privé</div><button onclick="order('Canva')">Commander</button></article>
+<article class="card"><div class="emoji">📡</div><div class="tag">Télévision</div><h3>CANAL+</h3><p>Renseignements sur les offres et abonnements officiels disponibles.</p><div class="price">15 000 FCFA</div><button onclick="order('CANAL+')">Commander</button></article>
+<article class="card"><div class="emoji">📚</div><div class="tag">Lecture numérique</div><h3>E-books</h3><p>Livres et guides numériques pour apprendre et développer vos compétences.</p><div class="price">Selon le livre</div><button onclick="order('E-books')">Commander</button></article>
+<article class="card"><div class="emoji">🎓</div><div class="tag">Formation</div><h3>Guides et formations</h3><p>Ressources pratiques pour progresser dans le numérique et au quotidien.</p><div class="price">Prix en privé</div><button onclick="order('Guides et formations')">Commander</button></article>
+<article class="card"><div class="emoji">🎨</div><div class="tag">Création IA</div><h3>Affiches avec l'IA</h3><p>Affiches publicitaires, flyers et visuels personnalisés pour votre activité.</p><div class="price">À partir de 1 500 FCFA</div><button onclick="order('Création d’affiches IA')">Commander</button></article>
+<article class="card"><div class="emoji">🎥</div><div class="tag">Formation IA</div><h3>Formation vidéo IA</h3><p>Apprenez à créer des vidéos à partir de textes, d'idées et de concepts.</p><div class="price">15 000 FCFA</div><button onclick="order('Formation vidéo IA')">Commander</button></article>
+<article class="card"><div class="emoji">🧩</div><div class="tag">Outils digitaux</div><h3>Outils et logiciels</h3><p>Des outils utiles pour le travail, les études et la création.</p><div class="price">5 000 FCFA</div><button onclick="order('Outils et logiciels')">Commander</button></article>
+<article class="card"><div class="emoji">🎁</div><div class="tag">Nouveautés</div><h3>Autres produits</h3><p>Une demande spéciale ? Contactez-nous pour connaître les disponibilités.</p><div class="price">Prix en privé</div><button onclick="order('Autres produits')">Commander</button></article>
+</div></div></section>
+<section class="delivery" id="livraison"><div class="wrap"><div class="kicker">Comment ça marche ?</div><h2>Une commande simple</h2><p class="muted">1. Choisissez votre produit. 2. Contactez-nous sur WhatsApp pour confirmer le prix, la disponibilité et les conditions. 3. Recevez votre commande après confirmation. Les produits numériques peuvent être livrés à distance. La livraison physique dépend du produit et de la zone.</p></div></section>
+<section class="contact" id="contact"><div class="wrap"><h2>Big_shop est à votre écoute.</h2><p>Pour les prix, la disponibilité, les commandes ou la livraison, contactez-nous directement.</p><a class="btn light" href="https://wa.me/22896465645?text=Bonjour%20Big_shop%2C%20je%20souhaite%20passer%20une%20commande.">WhatsApp : +228 96 46 56 45</a></div></section>
+</main>
+<footer>© 2026 Big_shop — Tous droits réservés.<br>Contact : +228 96 46 56 45 · Togo<br>Les marques citées appartiennent à leurs propriétaires respectifs.</footer>
+<div class="chat" id="chat" role="dialog" aria-label="Assistant IA Big_shop"><div class="chathead"><strong>🤖 Assistant IA Big_shop</strong><button onclick="toggleChat()" aria-label="Fermer">×</button></div><div class="messages" id="messages"><div class="bubble">Bonjour 👋 Posez-moi vos questions sur nos produits, nos prix, les commandes ou la livraison.</div></div><form class="chatform" id="chatform"><input id="question" maxlength="2000" placeholder="Écrivez votre question…" required><button>Envoyer</button></form><a class="wa" href="https://wa.me/22896465645">Parler à un conseiller WhatsApp</a></div>
+<button class="assistant-launch" onclick="toggleChat()">🤖 Assistant IA</button>
+<script>
+const phone='22896465645';
+function order(product){const url='https://wa.me/'+phone+'?text='+encodeURIComponent('Bonjour Big_shop, je souhaite commander ou connaître le prix et la disponibilité de : '+product+'.');window.open(url,'_blank','noopener');}
+function toggleChat(){document.getElementById('chat').classList.toggle('open');}
+function bubble(text,who){const el=document.createElement('div');el.className='bubble '+(who||'');el.textContent=text;const box=document.getElementById('messages');box.appendChild(el);box.scrollTop=box.scrollHeight;return el;}
+document.getElementById('chatform').addEventListener('submit',async e=>{e.preventDefault();const input=document.getElementById('question');const q=input.value.trim();if(!q)return;input.value='';bubble(q,'user');const pending=bubble('Je prépare une réponse…');const btn=e.currentTarget.querySelector('button');btn.disabled=true;try{const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:q})});const data=await r.json();if(!r.ok)throw new Error(data.error||'Service temporairement indisponible.');pending.textContent=data.reply||'Je ne peux pas répondre pour le moment.';}catch(err){pending.textContent=err.message+' Vous pouvez aussi nous écrire sur WhatsApp au +228 96 46 56 45.';}finally{btn.disabled=false;input.focus();}});
+</script>
+</body>
+</html>
