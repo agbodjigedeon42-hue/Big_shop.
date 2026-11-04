@@ -1,0 +1,8 @@
+{
+  "name": "big-shop-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Boutique digitale Big_shop avec assistant IA OpenAI sur Vercel",
+  "engines": { "node": ">=20" },
+  "dependencies": { "openai": "^6.0.0" }
+}
